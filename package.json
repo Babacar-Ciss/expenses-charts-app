@@ -1,0 +1,14 @@
+{
+  "name": "expenses-chart-component",
+  "version": "1.0.0",
+  "description": "Expenses Chart Component",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./assets/styles/sass/main.scss ./assets/styles/style.css -w"
+  },
+  "author": "Babacar Ciss",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
