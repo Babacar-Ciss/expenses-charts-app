@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f8e9dd;
+  font-family: DM Sans;
+}
+
+.container {
+  width: 540px;
+  margin: 90px auto;
+}
+
+.container__balance-card {
+  height: 125px;
+  color: #fff;
+  background-color: #ec755d;
+  border-radius: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.container__balance-card--my-balance {
+  flex-direction: column;
+  justify-content: stretch;
+  margin-top: 27px;
+  margin-left: 32px;
+  display: flex;
+}
+
+.container__balance-card--my-balance p {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.container__balance-card--my-balance h1 {
+  color: #fffbf6;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.container__balance-card img {
+  width: 72px;
+  height: 48px;
+  margin-top: 39px;
+  margin-right: 39px;
+}
+
+.container__spending-card {
+  width: 100%;
+  height: 511px;
+  background-color: #fff;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 24px;
+  display: flex;
+}
+
+.container__spending-card h1 {
+  width: 350px;
+  height: 42px;
+  color: #382314;
+  margin-top: 32px;
+  margin-left: 40px;
+}
+
+.container__spending-card-graphics {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 15px;
+  display: flex;
+}
+
+.container__spending-card-graphics-days {
+  flex-direction: column-reverse;
+  margin-right: 18px;
+  display: flex;
+}
+
+.container__spending-card-graphics-days div:hover {
+  background-color: #ff9b86;
+}
+
+.container__spending-card-graphics-days h4 {
+  color: #92857a;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.container__spending-card-graphics-days div {
+  width: 50px;
+  cursor: pointer;
+  background-color: #ec755d;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.container__spending-card-graphics-days.mon div {
+  height: 50px;
+}
+
+.container__spending-card-graphics-days.tue div {
+  height: 100px;
+}
+
+.container__spending-card-graphics-days.wed div {
+  height: 150px;
+}
+
+.container__spending-card-graphics-days.thu div {
+  height: 89px;
+}
+
+.container__spending-card-graphics-days.fri div {
+  height: 67px;
+}
+
+.container__spending-card-graphics-days.sat div {
+  height: 124px;
+}
+
+.container__spending-card-graphics-days.sun div {
+  height: 73px;
+  margin-right: 0;
+}
+
+.container__spending-card--line {
+  width: 460px;
+  height: 2px;
+  background-color: #f8e9dd;
+  margin: 0 auto;
+  transform: translateY(-35px);
+}
+
+.container__spending-card--info {
+  margin: 0 auto;
+  display: flex;
+  transform: translateY(-68px);
+}
+
+.container__spending-card--info p {
+  color: #92857a;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.container__spending-card--info-total h1 {
+  color: #382314;
+  margin: 0;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.container__spending-card--info-last-month {
+  text-align: right;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  display: flex;
+}
+
+.container__spending-card--info-last-month h4 {
+  color: #382314;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.active {
+  width: 50px;
+  cursor: pointer;
+  background-color: #76b5bc;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+/*# sourceMappingURL=index.6bb8e226.css.map */

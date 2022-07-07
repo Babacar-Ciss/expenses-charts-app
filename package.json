@@ -1,14 +1,17 @@
 {
   "name": "expenses-chart-component",
   "version": "1.0.0",
+  "source": "src/index.js",
   "description": "Expenses Chart Component",
-  "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./assets/styles/sass/main.scss ./assets/styles/style.css -w"
+    "compile:sass": "node-sass ./assets/styles/sass/main.scss ./assets/styles/style.css -w",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "Babacar Ciss",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "parcel": "latest"
   }
 }
