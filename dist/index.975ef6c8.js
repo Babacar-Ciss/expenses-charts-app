@@ -534,17 +534,38 @@ function hmrAcceptRun(bundle, id) {
 },{}],"8lqZg":[function(require,module,exports) {
 // Récuperation données data.json
 var _dataJson = require("../data.json");
+//Variables
+let currentIndex;
+let previousIndex;
 // Selecteurs //
 const charts = document.querySelectorAll(".container__spending-card-graphics-days");
-console.log(charts[0]);
-let currentIndex;
 //Récuperation du jour sous format 3 lettres(thu)
 let date = new Date();
 let currentDate = date.toDateString().slice(0, 3).toLowerCase();
 //Récupération de l'index du jour
 currentIndex = _dataJson.findIndex((data)=>data.day === currentDate);
-charts[currentIndex].classList.add("active");
-charts[currentIndex].classList.remove("container__spending-card-graphics-days div");
+// Activation jour courant
+charts[currentIndex].childNodes[3].style.backgroundColor = "#76B5BC";
+charts[currentIndex].insertAdjacentHTML("beforeend", `<p> $${_dataJson[currentIndex].amount} </p>`);
+// Survol (Focus) pour récupérer le montant dépensé
+charts.forEach((chart, index)=>{
+    // Survol (mouseover) pour récupérer le montant dépensé
+    chart.addEventListener("mouseover", ()=>{
+        cleanPreviousDisplay(charts);
+        if (currentIndex === index) return;
+        else chart.insertAdjacentHTML("beforeend", `<p> $${_dataJson[index].amount} </p>`);
+    });
+    // mouseout  pour enlever l'affichage le montant dépensé
+    chart.addEventListener("mouseout", ()=>{
+        cleanPreviousDisplay(charts);
+    });
+});
+function cleanPreviousDisplay(els) {
+    els.forEach((el)=>{
+        if (el.children.length === 3) el.removeChild(el.lastChild);
+    });
+    charts[currentIndex].insertAdjacentHTML("beforeend", `<p> $${_dataJson[currentIndex].amount} </p>`);
+}
 
 },{"../data.json":"cn6Iz"}],"cn6Iz":[function(require,module,exports) {
 module.exports = JSON.parse('[{"day":"mon","amount":17.45},{"day":"tue","amount":34.91},{"day":"wed","amount":52.36},{"day":"thu","amount":31.07},{"day":"fri","amount":23.39},{"day":"sat","amount":43.28},{"day":"sun","amount":25.48}]');

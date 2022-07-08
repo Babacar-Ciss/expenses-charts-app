@@ -81,8 +81,10 @@ body {
 
 .container__spending-card-graphics-days {
   flex-direction: column-reverse;
+  align-items: center;
   margin-right: 18px;
   display: flex;
+  position: relative;
 }
 
 .container__spending-card-graphics-days div:hover {
@@ -94,6 +96,21 @@ body {
   text-align: center;
   font-size: 15px;
   line-height: 20px;
+}
+
+.container__spending-card-graphics-days p {
+  width: 71px;
+  height: 50px;
+  color: #fff;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 60% 84%, 49% 100%, 35% 84%, 0 84%);
+  background-color: #382314;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
 }
 
 .container__spending-card-graphics-days div {
@@ -172,14 +189,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
-}
-
-.active {
-  width: 50px;
-  cursor: pointer;
-  background-color: #76b5bc;
-  border-radius: 5px;
-  transition: all .3s;
 }
 
 /*# sourceMappingURL=index.6bb8e226.css.map */
