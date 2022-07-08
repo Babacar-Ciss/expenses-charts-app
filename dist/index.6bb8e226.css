@@ -103,6 +103,7 @@ body {
   height: 50px;
   color: #fff;
   clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 60% 84%, 49% 100%, 35% 84%, 0 84%);
+  pointer-events: none;
   background-color: #382314;
   border-radius: 10px;
   justify-content: center;
@@ -111,6 +112,8 @@ body {
   font-size: 18px;
   font-weight: 700;
   display: flex;
+  position: absolute;
+  top: 50px;
 }
 
 .container__spending-card-graphics-days div {
@@ -189,6 +192,23 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
+}
+
+.styleChart {
+  width: 71px;
+  height: 50px;
+  color: #fff;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 60% 84%, 49% 100%, 35% 84%, 0 84%);
+  background-color: #382314;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  position: absolute;
+  top: 40px;
 }
 
 /*# sourceMappingURL=index.6bb8e226.css.map */

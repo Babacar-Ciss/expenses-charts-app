@@ -96,8 +96,8 @@ body {
             }
 
             & p {
-                // position: absolute;
-                // top : calc(height);
+                position: absolute;
+                top : 50px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -110,6 +110,7 @@ body {
                 background-color: #382314;
                 margin-bottom: 8px;
                 clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 60% 84%, 49% 100%, 35% 84%, 0 84%);
+                pointer-events: none;
             }
 
 
@@ -118,9 +119,7 @@ body {
                border-radius: 5px;
                width: 50px;
                cursor: pointer;
-               transition: all 0.3s;
-
-            
+               transition: all 0.3s;  
         }
 
             &.mon div {
@@ -197,5 +196,22 @@ body {
         }
         }
     }
+}
+
+.styleChart {
+    position: absolute;
+    top : 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 71px;
+    height: 50px;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #382314;
+    margin-bottom: 8px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 60% 84%, 49% 100%, 35% 84%, 0 84%);
 }
 
